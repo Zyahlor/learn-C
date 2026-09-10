@@ -1,0 +1,27 @@
+# === Compiled binaries ===
+*.exe
+*.out
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dll
+*.dSYM/
+
+# === Debug files ===
+*.pdb
+*.ilk
+
+# === Build folders ===
+build/
+bin/
+obj/
+
+# === IDE / Editor ===
+.vscode/
+*.code-workspace
+
+# === OS junk ===
+Thumbs.db
+.DS_Store
