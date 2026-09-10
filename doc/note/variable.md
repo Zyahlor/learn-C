@@ -11,11 +11,12 @@ age = 20;       // ✅ đổi giá trị
 age = "Bao";    // ❌ sai kiểu
 ```
 # 2. kiểu dữ liệu cơ bản
--  char   : ký tự
--  int    : số nguyên
--  float  : số thực
--  double : số thực độ chính xác cao hơn
-
+-  char     : ký tự
+-  int      : số nguyên
+-  float    : số thực
+-  double   : số thực độ chính xác cao hơn
+-  signed   : số chứa cả âm và dương
+-  unsigned : số chỉ chứa số dương
 ```C
 char grade = 'A';
 int age = 19;
@@ -31,7 +32,10 @@ double pi = 3.141592;
 + float    : `%f`
 + char     : `%c`
 + double   : `%lf`
-+ sizeof  : `%zu`
++ sizeof   : `%zu`
++ signed   : `%d`
++ unsigned : `%u`
+
 > printf() không tự biết kiểu dữ liệu của các giá trị/dữ liệu phía sau, nên cần ký hiệu để biết cách diễn giải và in dữ liệu.
 # 3. sizerof() là gì?
 - dùng để kiểm tra kích thước của 1 kiểu dữ liệu,biến đơn vị là byte
