@@ -27,8 +27,25 @@ double pi = 3.141592;
 - string dùng nháy kép: ` 'bao' `
 # 3. cách xuất dữ liệu
 - tùy thuộc vào loại kiểu dữ liệu có cách xuất khác nhau:
-+ int    : `%d`
-+ float  : `%f`
-+ char   : `%c`
-+ double : `%lf`
++ int      : `%d`
++ float    : `%f`
++ char     : `%c`
++ double   : `%lf`
++ sizeof  : `%zu`
 > printf() không tự biết kiểu dữ liệu của các giá trị/dữ liệu phía sau, nên cần ký hiệu để biết cách diễn giải và in dữ liệu.
+# 3. sizerof() là gì?
+- dùng để kiểm tra kích thước của 1 kiểu dữ liệu,biến đơn vị là byte
+```C
+#include <stdio.h>
+
+int main() {
+    int age = 19;
+
+    printf("%zu\n", sizeof(age)); // => 4 byte
+    printf("%zu\n", sizeof(int)); // => 4 byte
+                                // vì sao? vì ta khai báo age thuộc kiểu int, int có 4 byte bộ nhớ => age cũng vậy, có 4 byte bộ nhớ
+    return 0;
+}
+```
+
+**lưu ý:**⚠️ Không được mặc định mọi máy đều giống hệt nhau. Kích thước một số kiểu phụ thuộc implementation/compiler/platform, riêng char luôn = 1 byte theo chuẩn C
