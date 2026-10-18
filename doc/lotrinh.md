@@ -680,7 +680,7 @@ gcc main.o -o main
 
 ---
 
-# 16. Makefile
+# 16. [[makefile]]
 
 Học cách build project:
 
