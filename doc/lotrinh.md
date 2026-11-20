@@ -518,7 +518,7 @@ ptr->age = 20;
 
 ---
 
-# 12. Dynamic Memory ⭐⭐⭐
+# 12. [[Dynamic_Memory]] ⭐⭐⭐
 
 > Đây là lúc bắt đầu thật sự hiểu C quản lý memory như thế nào.
 
@@ -565,7 +565,7 @@ heap overflow
 
 ---
 
-# 13. File I/O
+# 13. [[tương tác file]]
 
 ## Học
 
@@ -604,7 +604,7 @@ Có thể lưu dữ liệu vào file.
 
 ---
 
-# 14. Preprocessor
+# 14. [[Preprocessor]]
 
 ## Học
 
